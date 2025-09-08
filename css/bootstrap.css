@@ -3793,6 +3793,28 @@ textarea.form-control-lg {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+.header-half{
+  --title-font-size: 2rem;
+
+}
+.header-brand{
+  display: block;
+  font-size: var(--title-font-size);
+}
+.header-brand:visited{
+
+}
+.header-brand:active{
+
+}
+
+.header-brand:hover{
+  
+}
+.contactinfo{
+  display:inline-block;
+  width:45%;
+}
 
 .nav {
   --bs-nav-link-padding-x: 1rem;
@@ -3835,6 +3857,20 @@ textarea.form-control-lg {
   color: var(--bs-nav-link-disabled-color);
   pointer-events: none;
   cursor: default;
+}
+
+.nav-text{
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  margin-bottom: 0;
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  background: none;
+  border: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  float:right;
 }
 
 .nav-tabs {
@@ -3983,7 +4019,7 @@ textarea.form-control-lg {
 }
 
 .navbar-nav {
-  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-navbar-color);
