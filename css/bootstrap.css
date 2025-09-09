@@ -3793,13 +3793,38 @@ textarea.form-control-lg {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-.header-half{
-  --title-font-size: 2rem;
-
+header{
+  
+  --title-font-size: 3rem;
+  --block-font-size: 1.5rem;
+  --top-color: rgb(20, 23, 26);
+  --font-color: rgb(255,255,255);
+  --font-color2: rgba(255,255,255,0.55);
 }
 .header-brand{
-  display: block;
+  color: var(--font-color);
+  background-color: var(--top-color);
   font-size: var(--title-font-size);
+}
+.header-brand p{
+  margin: 0;
+}
+.header-half{
+  color: var(--font-color);
+  background-color: var(--top-color);
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+}
+.header-half .contactinfo:first-child:not(.header-brand){
+  border-left:none;
+  margin-left: 0;
+}
+.header-half .contactinfo{
+  position: relative;
+  border-left: 1px solid rgba(255, 255,255, .7);
+  padding-left: 75px;
+  margin-left: 30px;
 }
 .header-brand:visited{
 
@@ -3812,10 +3837,9 @@ textarea.form-control-lg {
   
 }
 .contactinfo{
-  display:inline-block;
-  width:45%;
+  font-size: var(--block-font-size);
+  margin:auto;
 }
-
 .nav {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
