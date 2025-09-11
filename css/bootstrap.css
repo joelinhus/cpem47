@@ -3809,6 +3809,41 @@ header{
 .header-brand p{
   margin: 0;
 }
+/*
+.iframe-view{
+   position: relative;
+        width: 425px; 
+        height: 400px;
+        overflow: hidden; 
+        border: 1px solid #ccc;
+}
+.iframe-view .blog{
+  position: absolute;
+        top: -100px; 
+        left: -200px; 
+        width: 1000px; 
+        height: 800px;
+}*/
+.iframe-view
+{
+    width    : 420px;
+    height   : 600px;
+    overflow : hidden;
+    position : relative;
+}
+
+.iframe-view .blog
+{
+    position : absolute;
+    top      : -250px;
+    left     : 0;
+    width    : 525px;
+    height   : 1200px;
+}
+
+main div.columnindex:not(:first-child){
+  border-left: 1px solid rgba(0, 0, 0, .55);
+}
 .header-half{
   color: var(--font-color);
   background-color: var(--top-color);
