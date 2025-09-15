@@ -3826,23 +3826,37 @@ header{
 }*/
 .iframe-view
 {
-    width    : 420px;
+    width    : 417px;
     height   : 600px;
     overflow : hidden;
     position : relative;
 }
-
-.iframe-view .blog
+.iframe-view .blog, .cover-div
 {
     position : absolute;
     top      : -250px;
-    left     : 0;
+    left     : -14px;
     width    : 525px;
     height   : 1200px;
 }
-
+.iframe-view.blog{
+  z-index: 1;
+}
+.cover-div{
+  z-index: 2;
+}
 main div.columnindex:not(:first-child){
-  border-left: 1px solid rgba(0, 0, 0, .55);
+  padding-left: 30px;
+  margin-left: 45px;
+  border-left: 5px ridge rgba(0, 0, 0, .55);
+}
+footer{
+  background-color: rgba(0, 0, 0, .85);
+}
+footer p{
+  color: rgba(255,255,255,0.6);
+  padding: 50px 200px 50px 200px;
+  margin: 50px 200px 0 200px;
 }
 .header-half{
   color: var(--font-color);
