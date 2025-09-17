@@ -1015,6 +1015,9 @@ progress {
 }
 
 @media (min-width: 576px) {
+  .left-border{
+    border-left: none;
+  }
   .col-sm {
     flex: 1 0 0;
   }
@@ -1184,6 +1187,9 @@ progress {
   }
 }
 @media (min-width: 768px) {
+  .left-border{
+    border-left: 3px solid var(--bs-gray-600) ;
+  }
   .col-md {
     flex: 1 0 0;
   }
@@ -1353,6 +1359,9 @@ progress {
   }
 }
 @media (min-width: 992px) {
+  .left-border{
+    border-left: 3px solid var(--bs-gray-600) ;
+  }
   .col-lg {
     flex: 1 0 0;
   }
@@ -1522,6 +1531,9 @@ progress {
   }
 }
 @media (min-width: 1200px) {
+  .left-border{
+    border-left: 3px solid var(--bs-gray-600) ;
+  }
   .col-xl {
     flex: 1 0 0;
   }
@@ -3794,7 +3806,6 @@ textarea.form-control-lg {
   border-top-right-radius: 0;
 }
 header{
-  
   --title-font-size: 3rem;
   --block-font-size: 1.5rem;
   --top-color: rgb(20, 23, 26);
@@ -3834,25 +3845,23 @@ header{
 .iframe-view .blog, .cover-div
 {
     position : absolute;
-    top      : -250px;
+    top      : -210px;
     left     : -14px;
     width    : 525px;
     height   : 1200px;
 }
-.iframe-view.blog{
+.iframe-view .blog{
   z-index: 1;
+  transform: scale(.8); /* Adjust the value (e.g., 0.5 for 50% zoom out) */
+  transform-origin: 0 0;
 }
 .cover-div{
   z-index: 2;
 }
-main div.columnindex:not(:first-child){
-  padding-left: 30px;
-  margin-left: 45px;
-  border-left: 5px ridge rgba(0, 0, 0, .55);
-}
 footer{
   background-color: rgba(0, 0, 0, .85);
 }
+/*
 footer p{
   color: rgba(255,255,255,0.6);
   padding: 50px 200px 50px 200px;
@@ -3888,7 +3897,7 @@ footer p{
 .contactinfo{
   font-size: var(--block-font-size);
   margin:auto;
-}
+}*/
 .nav {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
